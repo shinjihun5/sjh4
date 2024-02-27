@@ -34,7 +34,7 @@ namespace projecttest
                         MySqlDataReader reader = command.ExecuteReader();
                         while (reader.Read())
                         {
-                            Console.WriteLine("Amount: " + reader["Amount"] + " Time: " + reader["Time"]); 
+                            Console.WriteLine("Amount: " + reader["amount"] + " DateTime: " + reader["DateTime"]); 
                                 // + ", Card: " + reader["Card"] + ", Cash: " + reader["Cash"]);
                         }
                         reader.Close();
